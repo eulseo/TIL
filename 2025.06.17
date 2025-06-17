@@ -1,0 +1,55 @@
+branch : 분기된 가지 (다른 차원)
+
+프로젝트를 하나 이상의 모습으로 관리해야할때 ex) 실배포용 , 테스트 서버용 등
+여러 작업이 독립 실행 되었을때 ex ) 신기능, 코드 개선 -> 각각의 차원에서 관리한 main차원에 통합
+
+이 모든것을 하나의 프로젝트 폴더에서 진행 !!
+
+
+branch 생성 : git branch (branch 이름)  ex) git branch add-coach
+branch 목록 확인 : git branch
+branch 이동 : git switch (branch 이름)   ex) git switch add-coach
+
+branch 생성 및 이동 : git switch -c (branch 이름)   ex) git switch -c add-players
+branch 삭제 : git branch -d (branch 이름)    ex) git branch -d add-players
+
+branch 이름 변경 : git branch -m (기존 branch 이름) (새로운 branch 이름) ex) git branch -m add-coach add-headcoach
+
+branch 합치는 2가지 방법 : merge, rebase
+
+merge : 두 branch를 한 커밋에 이어 붙인다 (branch 사용내역이 남음)
+rebase : branch를 다른 branch에 이어 붙인다 (한줄로 깔끔하게 정리 가능)
+
+merge 합치기 : git merge (branch 이름)   ex) git merge add-coach
+ㄴ main으로 가서 입력
+  merge도 하나의 커밋이므로 reset 되돌리기 가능
+ 병합된 branch는 삭제 -> git branch -d (branch 이름)
+    
+rebase 합치기 : git rebase main
+ㄴ 합칠 branch로 가서 입력
+  main으로 가 main이랑 합친 branch 위치 똑같이 하기 -> git merge (합친 branch 이름)
+  병합된 branch는 삭제 -> git branch -d (branch 이름)
+
+
+merge 충돌 발생시 : 충돌난 부분을 고치기 -> git add . -> git commit
+
+rebase 충돌 발생시 : 충돌난 부분을 고치기 -> git add . -> git rebase --continue
+                                       -> 어떤 부분을 고치냐에 따라 커밋개수 달라짐
+
+로컬 : 내 인텔리제이 
+원격 : github 저장소 
+
+gitHub에서 프로젝트 다운받기 : git clone (원격 저장소 주소)
+파일 올리기 : git push
+파일 받기 : git pull
+파일 올려야 하는데 받아야할 파일도 있을때 : git pull --no-rebase -> merge 방식
+                                         git pull --rebase -> rebase 방식
+                                         
+원격저장소의 커밋을 로컬의 내역으로 강제 push : git push --force
+
+원격으로 branch 만들기 : git push -u (원격이름) (branch 이름)
+branch 목록 확인(원격저장소 까지) : git branch -all / git branch -a
+원격의 branch 로컬로 받아오기 : git fetch
+로컬에 원격에서 받아온 같은 이름의 branch를 생성하고 원격과 연결 : git switch -t (원격이름)/(branch 이름)
+원격의 branch 삭제 : git push (원격 이름) --delete (원격의 브랜치명)                             
+                             
