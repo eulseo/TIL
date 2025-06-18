@@ -144,7 +144,7 @@ Git에서 추적하지 않는 파일들 삭제 : git clean
 
 
 
-reset으로 사라진 커밋을 복구 : git reflog에서 돌아갈 커밋해시를 얻기 -> git reset --hard (커밋 해시)
+reset으로 사라진 커밋을 복구 : git reflog -> 돌아갈 커밋해시를 얻기 -> git reset --hard (커밋 해시)
 
 
 
