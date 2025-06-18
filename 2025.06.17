@@ -5,11 +5,14 @@ branch : 분기된 가지 (다른 차원)
 
 이 모든것을 하나의 프로젝트 폴더에서 진행 !!
 
-
 branch 생성 : git branch (branch 이름)  ex) git branch add-coach
+
 branch 목록 확인 : git branch
+
 branch 이동 : git switch (branch 이름)  ex) git switch add-coach
+
 branch 생성 및 이동 : git switch -c (branch 이름)  ex) git switch -c add-players
+
 branch 삭제 : git branch -d (branch 이름)  ex) git branch -d add-players
 
 branch 이름 변경 : git branch -m (기존 branch 이름) (새로운 branch 이름)  ex) git branch -m add-coach add-headcoach
@@ -18,6 +21,7 @@ branch 합치는 2가지 방법 : merge, rebase
 
 merge : 두 branch를 한 커밋에 이어 붙인다 (branch 사용내역이 남음)
         ㄴ 브랜치 사용내역을 남길 필요가 있을 때 적합한 방식
+
 rebase : branch를 다른 branch에 이어 붙인다 (한줄로 깔끔하게 정리 가능)
         ㄴ 한 줄로 깔끔히 정리된 내역을 유지하기 원할 때 적합
         ㄴ 팀원과 공유된 커밋들에 대해서는 사용하지 않는 것이 좋음
@@ -33,12 +37,17 @@ merge 충돌 발생시 : 충돌난 부분 해결 -> git add . -> git commit
 rebase 충돌 발생시 : 충돌난 부분 해결 -> git add . -> git rebase --continue
       ㄴ 어떤 부분을 고치냐에 따라 커밋개수 달라짐
 
+
+
 로컬 : 내 IDE
 원격 : github 저장소 
 
 gitHub에서 프로젝트 다운받기 : git clone (원격 저장소 주소)
+
 파일 올리기 : git push
+
 파일 받기 : git pull
+
 파일 올려야 하는데 받아야할 파일도 있을때 : git pull --no-rebase -> merge 방식
                                          git pull --rebase -> rebase 방식
                                          
@@ -47,9 +56,13 @@ gitHub에서 프로젝트 다운받기 : git clone (원격 저장소 주소)
 
 로컬로 branch 만들어 원격에 push : git push -u (원격저장소 이름) (branch 이름)
                                                   ㄴ 보통 origin
+
 branch 목록 확인(원격저장소 까지) : git branch -all / git branch -a
+
 원격의 branch 로컬로 받아오기 : git fetch
+
 로컬에 원격에서 받아온 같은 이름의 branch를 생성하고 원격과 연결 : git switch -t (원격저장소 이름)/(branch 이름)
                                                                                 ㄴ 보통 origin
+
 원격의 branch 삭제 : git push (원격저장소 이름) --delete (원격의 브랜치명)                             
                                   ㄴ 보통 origin                  
