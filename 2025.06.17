@@ -23,10 +23,10 @@ rebase : branch를 다른 branch에 이어 붙인다 (한줄로 깔끔하게 정
         ㄴ 팀원과 공유된 커밋들에 대해서는 사용하지 않는 것이 좋음
 
 merge 합치기 : main으로 이동 -> git merge (branch 이름)  ex) git merge add-coach -> git branch -d (branch 이름)
-                                                                                  ㄴ 병합된 branch는 삭제 
+                                                                                        ㄴ 병합된 branch는 삭제 
 
 rebase 합치기 : 합칠 branch로 이동 -> git rebase main -> main으로 이동 -> git merge (합친 branch 이름) -> git branch -d (branch 이름)
-                                                                                  ㄴ 병합된 branch는 삭제 
+                                                                                                              ㄴ 병합된 branch는 삭제 
 
 merge 충돌 발생시 : 충돌난 부분 해결 -> git add . -> git commit
 
@@ -43,6 +43,7 @@ gitHub에서 프로젝트 다운받기 : git clone (원격 저장소 주소)
                                          git pull --rebase -> rebase 방식
                                          
 원격저장소의 커밋을 로컬의 커밋으로 강제 push : git push --force
+                                                     ㄴ 팀원과의 협업에서는 충분한 소통후 사용해야함
 
 로컬로 branch 만들어 원격에 push : git push -u (원격저장소 이름) (branch 이름)
                                                   ㄴ 보통 origin
