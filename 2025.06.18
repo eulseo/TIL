@@ -33,7 +33,7 @@ Git의 HEAD : 현재 속한 branch의 가장 최신 커밋
                         ㄴ  전부 사용 가능
 
 이동을 한단계 되돌리기(컨트롤 z) : git checkout -
-HEAD를 사용하여 reset 하기 : git reset (원하는 옵션) HEAD(옵션)   ex) git reset --hard HEAD^2
+HEAD를 사용하여 reset 하기 : git reset (reset 옵션) HEAD(옵션)   ex) git reset --hard HEAD^2
 
 
  
