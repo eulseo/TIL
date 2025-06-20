@@ -1,0 +1,64 @@
+Git의 추가 기능들
+
+Git Hooks : Git상의 이벤트마다 자동으로 실행될 스크립트를 지정
+
+Git Hooks 폴더 보기 : 프로젝트 폴더 내  .git > hooks 폴더 확인   
+                      파일 끝에 .sample을 없애면 훅 실행파일이 됨
+
+서브모듈 : 프로젝트 폴더 안에 또 다른 프로젝트가 포함될 때 사용
+
+main-project에 서브모듈로 submodule-project 추가 : git submodule add (submodule의 GitHub 레포지토리 주소) (하위폴더명, 없을 시 생략)
+
+서브모듈 업데이트 : git submodule init (특정 서브모듈 지정시 해당 이름)  -> git submodule update
+
+GitHub에서 submodule에 수정사항 커밋 : git submodule update --remote 
+
+
+
+마크다운 문법 
+
+제목 : # 제목
+      ## 제목
+
+글씨 강조 : **내용**
+
+기울임체 : *내용*
+
+글씨 강조하며 기울이기 : ***내용***
+
+취소선 : ~~내용~~
+
+밑줄 : <ins>내용 </ins>    
+
+코드강조 : `코드`
+
+코드 블록 : ```
+           코드
+           ```
+
+목록 : * 첫번째
+         ** 두번째
+
+테이블 : |내용|내용 |
+        |-----|----|
+        |내용 |내용 |
+
+
+Pull request : 코드 변경 사항 검토 및 병합 요청을 하기위                                   
+            ㄴ 팀원들의 동의를 거친 뒤 대상 브랜치에 적용
+        
+Issue : 버그나 문제 제보, 추가할 기능 등의 이슈 소통
+
+오픈소스 프로젝트에 기여하기 :  원하는 프로젝트 fork -> 코드 수정 후 pull request -> pull request 코멘트/반려/수락
+                                                                                                
+
+
+SSH 프로토콜을 통한 인증 : 공개키 암호화 방식 활용
+
+SSH 키 생성 : ssh-keygen -t ed25519 -C "(이메일 주소)"  ->  GitHub에 키 등록 : cat ~/.ssh/id_ed25519.pub
+
+GPG 키를 통한 검증 : Verified -> 신뢰할 만한 출처에서 커밋되었다는 인증   
+
+GitHub Actions를 사용한 자동화 : github에서 공식적으로 제공하는 CI/CD 툴 -> 개발의 work flow를 자동화할 수 있게 도와주는 툴이다.  
+                                                
+                                                   
