@@ -98,17 +98,17 @@ ex ) <img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴�
 
 6. 표 사용하기
 
-태그	         설명	                           비고
+태그	         설명	                            비고
 
 <table>	         테이블	
-<caption>        테이블 설명 또는 제목	          선택사항
+<caption>        테이블 설명 또는 제목	           선택사항
 <tr>	         테이블의 행	
 <td>	         테이블의 데이터 셀
 
 <thead>	         테이블의 헤더 부분	           <tbody> 앞에 와야 함
-<tbody>	         테이블의 본문	                 본 내용을 담음
+<tbody>	         테이블의 본문	                   본 내용을 담음
 <tfoot>	         테이블의 푸터 부분	           <tbody> 뒤에 와야 함
-<th>	         열 또는 행의 헤더	             scope 속성으로 row, col 중 선택
+<th>	         열 또는 행의 헤더	           scope 속성으로 row, col 중 선택
 
 colspan	         열 병합
 rowspan	         행 병합
