@@ -161,7 +161,7 @@ id 속성: 페이지마다 고유해야 함
 속성		        설명		              	비고
 placeholder     빈 칸에 보이는 안내문	
 maxlength	      최대 길이	
-minlength	      최소 길이 			          위반시 submit이 거부됨
+minlength	      최소 길이 			        위반시 submit이 거부됨
 
 숫자 관련 인풋 타입 : number, range, date
 
