@@ -58,14 +58,14 @@ HTML 태그는 정보의 종류를 구분하는데만 사용합니다.
 >	     &gt;
 
 
-태그	    	            설명	                                 비고
+태그	    	        설명	                                               비고
 
-<blockquote>	         비교적 긴 인용문에 사용	                 cite 속성으로 출처 표시
-<cite>	               저작물의 출처 표기	                     제목을 반드시 포함
-<q>	                   비교적 짧은 인용문에 사용              	 cite 속성으로 출처 표시
+<blockquote>	       비교적 긴 인용문에 사용	                               cite 속성으로 출처 표시
+<cite>	               저작물의 출처 표기	                               제목을 반드시 포함
+<q>	               비교적 짧은 인용문에 사용              	               cite 속성으로 출처 표시
 <mark>	               인용문 중 하이라이트 또는 사용자 행동과 연관된 곳 표시
                             
-<abbr>	               준말/머릿글자 표시	                      title 속성으로 원래 형태 표시	
+<abbr>	               준말/머릿글자 표시	                               title 속성으로 원래 형태 표시	
 
 
 
@@ -77,20 +77,20 @@ HTML 태그는 정보의 종류를 구분하는데만 사용합니다.
 <ol>	     순서가 있는 목록	     type, start 속성 사용 가능
 <li>	     목록 아이템	           ul, ol 태그의 1촌 자식으로 이 태그만 가능
 
-<dl>       용어와 정의시작
-<dt>       용어
-<dd>       정의
+<dl>         용어와 정의시작
+<dt>         용어
+<dd>         정의
 
 
 5. 이미지 넣기
 
-속성	       설명	                     비고
+속성	       설명	                   비고
 
-src	          원본파일 경로             절대경로 또는 상대경로
-alt	          대체 텍스트	             스크린 리더, 원본파일 무효시
-title	        툴팁	                   alt의 대체제나 반복이 되어서는 안됨
-width	        너비	                   픽셀 단위의 정수
-height	      높이	                   픽셀 단위의 정수
+src	       원본파일 경로                절대경로 또는 상대경로
+alt	       대체 텍스트	           스크린 리더, 원본파일 무효시
+title	       툴팁	                   alt의 대체제나 반복이 되어서는 안됨
+width	       너비	                   픽셀 단위의 정수
+height	       높이	                   픽셀 단위의 정수
 
 ex ) <img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴팁 텍스트)">
 
@@ -100,20 +100,20 @@ ex ) <img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴�
 
 태그	         설명	                           비고
 
-<table>	       테이블	
-<caption>      테이블 설명 또는 제목	          선택사항
+<table>	         테이블	
+<caption>        테이블 설명 또는 제목	          선택사항
 <tr>	         테이블의 행	
 <td>	         테이블의 데이터 셀
 
-<thead>	       테이블의 헤더 부분	           <tbody> 앞에 와야 함
-<tbody>	       테이블의 본문	                 본 내용을 담음
-<tfoot>	       테이블의 푸터 부분	           <tbody> 뒤에 와야 함
+<thead>	         테이블의 헤더 부분	           <tbody> 앞에 와야 함
+<tbody>	         테이블의 본문	                 본 내용을 담음
+<tfoot>	         테이블의 푸터 부분	           <tbody> 뒤에 와야 함
 <th>	         열 또는 행의 헤더	             scope 속성으로 row, col 중 선택
 
-colspan	       열 병합
-rowspan	       행 병합
+colspan	         열 병합
+rowspan	         행 병합
 
-<colgroup>     표에 열을 묶어서 속성 부여     <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
+<colgroup>       표에 열을 묶어서 속성 부여     <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
 <col>	         열의 묶음	                    span 속성으로 열 수 지정
 
 
@@ -126,10 +126,10 @@ HTML <a> 요소(앵커 요소) : href 특성을 통해 다른 페이지나 같�
 
 target 속성값	  설명		            비고
 
-_self	          현재 창		          기본
-_blank	      	새 창		            텍스트나 내부 이미지의 alt 등으로 명시 필요
-_parent		      부모 프레임	        <iframe> 사용시
-_top		        최상위 프레임      	<iframe> 사용시
+_self	          현재 창		    기본
+_blank	      	  새 창		            텍스트나 내부 이미지의 alt 등으로 명시 필요
+_parent		  부모 프레임	            <iframe> 사용시
+_top		  최상위 프레임      	    <iframe> 사용시
 
 id값을 사용한 요소로의 이동 : href값에 #(id값)을 넣음
 
@@ -139,15 +139,15 @@ href 값 앞부분 : mailto: - 이메일 링크, tel: - 전화번호 연결
 
 8. 사용자로 부터 입력받기
 
-태그		    설명			      	                  비고
+태그		    설명			      	         비고
 
-<form>		정보를 제출하기 위한 태그들을 포함	      autocomplete 속성: 자동완성 여부 (기본: on)
+<form>		정보를 제출하기 위한 태그들을 포함	                autocomplete 속성: 자동완성 여부 (기본: on)
 <label>		인풋 요소마다의 라벨		                for 속성값을 인풋 요소의 id와 연결. 인풋의 클릭 영역 확장
 <input>		입력을 받는 요소		                  	type 속성을 통해 다양화
-<button>	버튼				                          type 속성에 submit(제출), reset(초기화), button(기본 동작 없음)
+<button>	버튼				                type 속성에 submit(제출), reset(초기화), button(기본 동작 없음)
 
-<fieldset>	폼 태그 내 입력요소와 라벨들을 그룹화	disabled 속성: 포함된 입력요소 비활성화
-<legend>		필드셋 요소의 제목 또는 설명
+<fieldset>	폼 태그 내 입력요소와 라벨들을 그룹화	        disabled 속성: 포함된 입력요소 비활성화
+<legend>        필드셋 요소의 제목 또는 설명
 
 id 속성: 페이지마다 고유해야 함
          서버에서 각 항목을 받을 때 무엇에 대한 값인지 구분하는 이름으로 작용
@@ -159,7 +159,7 @@ id 속성: 페이지마다 고유해야 함
 텍스트 관련 인풋 속성들
 
 속성		        설명		              	비고
-placeholder    	빈 칸에 보이는 안내문	
+placeholder     빈 칸에 보이는 안내문	
 maxlength	      최대 길이	
 minlength	      최소 길이 			          위반시 submit이 거부됨
 
@@ -168,7 +168,7 @@ minlength	      최소 길이 			          위반시 submit이 거부됨
 숫자 관련 인풋 속성들
 
 속성	     설명	      비고
-min	       최소값	    date 등 타입마다 형식 다름
-max	       최대값	    date 등 타입마다 형식 다름
+min	     최소값	    date 등 타입마다 형식 다름
+max	     최대값	    date 등 타입마다 형식 다름
 step	     간격	
 
