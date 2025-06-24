@@ -113,8 +113,8 @@ ex ) <img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴�
 colspan	         열 병합
 rowspan	         행 병합
 
-<colgroup>       표에 열을 묶어서 속성 부여     <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
-<col>	         열의 묶음	                    span 속성으로 열 수 지정
+<colgroup>       표에 열을 묶어서 속성 부여          <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
+<col>	         열의 묶음	                   span 속성으로 열 수 지정
 
 
 
