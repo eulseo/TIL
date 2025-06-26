@@ -46,11 +46,11 @@ rows	    표시되는 줄 수
 
 옵션 관련 속성들
 
-속성		      태그  	    	설명
-multiple		  <select>		  다중 선택 가능. 드랍다운 대신 상자로 표시
-selected		  <option>		  선택됨 ( checkbox, radio의 checked처럼 )
-value		      <option>		  실제로 전송될 값
-list		      <input>		    연결할 <datalist>의 ID
+속성		      태그  	    	  설명
+multiple            <select>		  다중 선택 가능. 드랍다운 대신 상자로 표시
+selected	    <option>		  선택됨 ( checkbox, radio의 checked처럼 )
+value		    <option>		  실제로 전송될 값
+list		    <input>		  연결할 <datalist>의 ID
 
 정도를 표현하는 태그 : progress, meter
 
