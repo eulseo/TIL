@@ -1,7 +1,7 @@
 체크 관련 인풋 타입 : checkbox, radio
 
-checkbox : 다중선택 가능
-radio : 단일선택만 가능
+<checkbox> : 다중선택 가능
+<radio> : 단일선택만 가능
 
 체크 관련 인풋 속성들
 
