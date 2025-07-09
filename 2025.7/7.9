@@ -1,38 +1,38 @@
 박스 모델 2
 
-border : 요소에 테두리를 줄 수 있음, 선의 굵기와 스타일, 그리고 색을 다양한 값으로 줄 수 있음
-             border 속성 역시 특정 방향으로만 설정이 가능
+● border : 요소에 테두리를 줄 수 있음, 선의 굵기와 스타일, 그리고 색을 다양한 값으로 줄 수 있음
+            border 속성 역시 특정 방향으로만 설정이 가능
 
-    ㄴ  border : 너비 스타일 색      ex) border : 2px solid black
+     ㄴ  border : 너비 스타일 색      ex) border : 2px solid black
 
-box-sizing : 요소의 너비(width)와 높이(height)를 계산하는 방법을 지정
+● box-sizing : 요소의 너비(width)와 높이(height)를 계산하는 방법을 지정
     
-    ㄴ content-box : 너비와 높이가 "content" 기준, width/height 사이즈 = content
+     ㄴ content-box : 너비와 높이가 "content" 기준, width/height 사이즈 = content
         border-box : 너비와 높이가 "border" 기준, width/height 사이즈 = content + padding + border
 
-border-radius : 모서리를 둥글게 하는데 사용
+● border-radius : 모서리를 둥글게 하는데 사용
 
-    ㄴ px, %, em, rem 등으로 사용 가능
+      ㄴ px, %, em, rem 등으로 사용 가능
 
-overflow : 부모 요소보다 높이나 너비값이 큰 자식 요소를 나타내는 방법을 지정가능
-                overflow에 x축, y축 값을 함께 주거나 overflow-x, overflow-y 속성들로 따로 지정할 수 있음
+● overflow : 부모 요소보다 높이나 너비값이 큰 자식 요소를 나타내는 방법을 지정가능
+             overflow에 x축, y축 값을 함께 주거나 overflow-x, overflow-y 속성들로 따로 지정할 수 있음
 
      ㄴ auto : 컨텐츠의 크기가 주어진 공간을 넘어가는 경우에만 스크롤바가 생김
-         visible : 컨텐츠를 밖으로 밀어내는 한이 있더라도 끝까지 보여줌
-         hidden : 컨텐츠 밖으로 삐져나오는 컨텐츠를 숨김
-         scroll :  스크롤바가 생김
+        visible : 컨텐츠를 밖으로 밀어내는 한이 있더라도 끝까지 보여줌
+        hidden : 컨텐츠 밖으로 삐져나오는 컨텐츠를 숨김
+        scroll :  스크롤바가 생김
 
-box-shadow : 박스 요소에 그림자를 줄 수 있음
+● box-shadow : 박스 요소에 그림자를 줄 수 있음
 
      ㄴ box- shadow : inset 여부(안쪽 그림자) | x 축 | y 축 | 흐림효과 | 그림자 크기 | 그림자 색
-             ex ) box-shadow: 2px 3px 4px 5px red; ,  box-shadow: inset 16px 16px 0 8px blue;     
+           ex ) box-shadow: 2px 3px 4px 5px red; ,  box-shadow: inset 16px 16px 0 8px blue;     
 
                                                         
 배경 꾸미기
 
-background - ~~~~   : 이미지를 배경에 사용
+● background - ~~~~   : 이미지를 배경에 사용
                                     
-       ㄴ     background-image : 절대주소 or 상대주소
+       ㄴ      background-image : 절대주소 or 상대주소
                background-repeat : repeat, no-repeat 등  
                background-position : top, bottom, left, right, center 등 
                background-size : contain, cover 등 
@@ -40,8 +40,8 @@ background - ~~~~   : 이미지를 배경에 사용
 
 포지셔닝
 
-position : 요소들이 화면에 어떻게 배치될지를 지정
-              이 속성은 자식 요소에게 대물림되지 않는다는 점이 있음
+● position : 요소들이 화면에 어떻게 배치될지를 지정
+             이 속성은 자식 요소에게 대물림되지 않는다는 점이 있음
 
         ㄴ  static : 기본값, 전적으로 페이지의 흐름을 따름
              relative : 요소를 원래 위치를 기준으로 상대적(relative)으로 배치
@@ -49,7 +49,7 @@ position : 요소들이 화면에 어떻게 배치될지를 지정
              fixed : 요소를 항상 고정된(fixed) 위치에 배치
              sticky : 요소가 스크롤로 이동할 수 있는 공간을 제한
 
-z-index : static이 아닌 요소들간 위아래 배치 순서를 지정합니다. 
-             (position 속성이 static이 아닌 요소는 무조건 position 속성이 static인 요소 위로 올라옴
-              position 속성이 relative나 absolute, fixed, sticky인 요소 간에는 
-              HTML 문서 상에서 나중에 나오는 요소가 먼저 나오는 원 소 위로 올라옴)
+● z-index : static이 아닌 요소들간 위아래 배치 순서를 지정합니다. 
+            (position 속성이 static이 아닌 요소는 무조건 position 속성이 static인 요소 위로 올라옴
+             position 속성이 relative나 absolute, fixed, sticky인 요소 간에는 
+             HTML 문서 상에서 나중에 나오는 요소가 먼저 나오는 원 소 위로 올라옴)
